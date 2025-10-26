@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/styles.css">
+<script src="/script.js"></script>
+</head>
+
+    <body>
+            <title>Formulário</title>
+            <h1>Formulário de Contato</h1>
+                <form action="/submit" method="post">
+                    <table>
+                    <tr>
+                        <td>Nome:</td>
+                        <td><input type="text" name="nome" required placeholder="Digite seu nome"></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td><input type="email" name="email" required placeholder="Digite seu e-mail" onmouseover="this.style.backgroundColor='#e0e0e0'" onmouseout="this.style.backgroundColor=''" ></td>
+                    </tr>    
+                <tr>
+                    <td>Telefone:</td>
+                    <td><input type="tel" name="telefone" pattern="[0-9]{10,11}" placeholder="(DDD) Número" required></td>
+                </tr>
+                    <tr>
+                        <td>Mensagem:</td>
+                        <td><textarea name="mensagem" rows="4" cols="30" required></textarea></td>
+                    </tr> 
+                   
+                    <tr>
+                        <td>Sexo:</td>
+                        <td><select name="sexo">
+                            <option value="masculino">Masculino</option>
+                            <option value="feminino">Feminino</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </td>
+                     
+                    <tr>
+                        <td><input type="submit" value="Enviar"></td>
+
+                    </table>
+
+
+                </form>
+
+    </body>
+
+
